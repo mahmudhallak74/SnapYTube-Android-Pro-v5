@@ -1,0 +1,13 @@
+<!--
+  res_xml/file_paths.xml
+  يحدد لـ FileProvider بالضبط أي مجلد مسموح يشارك ملفات منه (ومنين). عن قصد
+  حاطين بس مجلد "downloads/" (جوا مجلد ملفات التطبيق الخاص) ومش كل التخزين،
+  اتباعاً لمبدأ "أقل صلاحية ممكنة" — ما في داعي نكشف أي مجلد تاني.
+
+  external-files-path = Context.getExternalFilesDir(null), يعني بالضبط نفس
+  المسار اللي main.py بيحسبه عن طريق android.storage.app_storage_path()
+  وserver.py بيحط فيه مجلد downloads/ (شوف get_storage_path() بـ main.py).
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-files-path name="downloads" path="downloads/" />
+</paths>

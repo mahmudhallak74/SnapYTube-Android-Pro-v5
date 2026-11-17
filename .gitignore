@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+bin/
+.buildozer/
+local_data/
+.venv/

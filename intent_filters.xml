@@ -1,0 +1,17 @@
+<!--
+  intent_filters.xml
+  يُدرج تلقائياً جوا وسم <activity> الرئيسي بـ AndroidManifest.xml عن طريق
+  android.manifest.intent_filters بملف buildozer.spec.
+
+  الهدف: تسجيل SnapYTube كخيار بقائمة "مشاركة" (Share) لأي تطبيق تاني بيشارك
+  نص عادي (رابط فيديو) — زي يوتيوب/تيك توك/إنستغرام لما تضغط زر "مشاركة"
+  وتختار SnapYTube من القائمة.
+
+  ملاحظة: category DEFAULT إلزامية وإلا أندرويد ما رح يعرض SnapYTube إطلاقاً
+  بقائمة المشاركة حتى لو الـ action/type صحيحين.
+-->
+<intent-filter>
+    <action android:name="android.intent.action.SEND" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <data android:mimeType="text/plain" />
+</intent-filter>
