@@ -31,3 +31,4 @@ android.presplash_color = #0D1117
 log_level = 2
 warn_on_root = 1
 android.accept_sdk_license = True
+android.skip_update = False
